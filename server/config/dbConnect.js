@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-exports.dbConnect = () => {
+module.exports.dbConnect = () => {
     mongoose.connect(process.env.DATABASE_URL , {
         useNewUrlParser: true ,
         useUnifiedTopology: true 
